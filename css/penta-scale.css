@@ -17,7 +17,7 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  }
+}
 
 .rslides-default li {
   -webkit-backface-visibility: hidden;
@@ -26,13 +26,13 @@ html {
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
 .rslides-default li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
+}
 
 .rslides-default img {
   display: block;
@@ -51,8 +51,61 @@ html {
 .navbar .logo {
     height:40px;
     width:auto;
-    margin:5px -10px;
+    margin:5px;
 }
+
+.navbar .top-nav-collapse {
+    height:40px;
+    width:auto;
+    margin-right:-20px;
+}
+
+.navbar-default .navbar-toggle {
+    border:none;
+    padding:0;
+    margin:5px 0px;
+    background:none;
+}
+
+.navbar-default .navbar-toggle img {
+    height:40px;
+    width:auto;
+    margin-right:3px;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background:none !important;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+    border:none;
+}
+
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover {
+    color:#FFF;
+}
+
+.disabler {
+    z-index: 1000;
+    position: absolute;
+    background-color: black;
+    background-attachment: fixed;
+    opacity: 0.6;
+    width: 100%;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    pointer-events:none;
+}
+
+.noscroll { 
+  overflow: hidden;
+}
+
+
 
 @media(min-width:767px) {
 .navbar {
@@ -204,6 +257,43 @@ section > .container > .row.showbox {
     color:#f4f7f5;
     min-height:210px;
 }
+
+
+/* MOBILE NAVBAR STYLE*/
+.navbar-nav {
+    margin:0;
+}
+.navbar-collapse {
+    background-color: #9d191a;
+    padding:20px 20px 40px 20px;
+}
+.navbar-nav li {
+    border-bottom: 1px solid #f4f7f5;
+    text-transform: uppercase;
+    color:#f4f7f5;
+}
+.navbar-default .navbar-nav>li>a {
+    color:inherit;
+    font-size:16px;
+}
+
+.navbar-nav.others {
+    margin-top:30px;
+}
+
+.navbar-nav.others li {
+    border-bottom:none;
+    text-align:right;
+}
+
+.navbar-nav.others>li>a {
+    padding-right:0;
+}
+
+.navbar-nav.others>li>a:after {
+    content:"›";
+    margin-left:3px;
+}
 }
 
 
@@ -285,4 +375,16 @@ section > .container > .row.showbox > div {
 .call-to-action {
     margin-top:30px;
 }
+
+.nav.navbar-nav.others {
+    float:right;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background:none;
+    color:#FFF;
+}
+
 }
