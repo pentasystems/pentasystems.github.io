@@ -139,6 +139,9 @@ nav + section {
     margin-top:0;
 }
 
+
+
+
 @media screen and (max-width: 767px) {
 section > .container > .row.alt-left > div:nth-child(odd),
 section > .container > .row.alt-right > div:nth-child(even) {
@@ -189,7 +192,22 @@ section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
     border-right: 1px solid #d6d2d2 !important;
     border-bottom: 3px solid #d6d2d2 !important;
 }
+
+section > .container > .row.showbox {
+    background-image: none !important;
 }
+
+.showbox > div {
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    color:#f4f7f5;
+    min-height:210px;
+}
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 section > .container > .row > div {
@@ -237,5 +255,34 @@ section > .container > .row.no-pad > div {
 
 .navbar {
     padding:0 !important;
+}
+
+section > .container > .row.showbox > div {
+    background-image: none !important;
+}
+
+.showbox {
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    color:#f4f7f5;
+    min-height:300px;
+}
+
+.showbox h2 {
+    font-size:36px;
+}
+
+.showbox p {
+    font-size:18pt;
+    line-height:18pt;
+}
+
+.call-to-action a {
+    font-size:14pt;
+}
+
+.call-to-action {
+    margin-top:30px;
 }
 }
