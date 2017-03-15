@@ -119,6 +119,7 @@ input[type=text] {
     background:none;
     color:#FFFFFF;
     outline:none;
+    border-radius:0;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
