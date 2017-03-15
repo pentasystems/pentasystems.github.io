@@ -105,6 +105,40 @@ html {
   overflow: hidden;
 }
 
+input[type=submit] {
+    outline:none;
+}
+
+textarea,
+input[type=email],
+input[type=text] {
+    border:none;
+    border-bottom:1px solid #9d191a;
+    padding:3px;
+    margin:3px;
+    background:none;
+    color:#FFFFFF;
+    outline:none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#9d191a;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#9d191a;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#9d191a;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#9d191a;
+}
+
+textarea,
+input[type=text] {
+    border:1px solid #9d191a;
+}
+
 
 
 @media(min-width:767px) {
@@ -177,7 +211,8 @@ nav + section {
     margin-top: 50px;
 }
 
-.call-to-action a {
+.call-to-action a,
+.call-to-action input[type=submit] {
     border-radius:0 !important;
     color:#f4f7f5;
     background-color: #e5322c;
@@ -239,9 +274,10 @@ section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
     background-color: #e5322c !important;
 }
 
-.row > div.red-zone .call-to-action a {
+.row > div.red-zone .call-to-action a,
+.row.red-zone .call-to-action input[type=submit] {
     color:#333333 !important;
-    background-color:#e5322c !important;
+    background-color:#f4f7f5 !important;
     border-right: 1px solid #d6d2d2 !important;
     border-bottom: 3px solid #d6d2d2 !important;
 }
@@ -256,6 +292,16 @@ section > .container > .row.showbox {
     background-position:center center;
     color:#f4f7f5;
     min-height:210px;
+}
+
+textarea,
+input[type=email],
+input[type=text] {
+    width:100%;
+}
+
+textarea {
+    min-height:120px;
 }
 
 
@@ -294,6 +340,13 @@ section > .container > .row.showbox {
     content:"›";
     margin-left:3px;
 }
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background:none;
+    color:#f4f7f5;
+}
 }
 
 
@@ -308,6 +361,10 @@ section > .container > .row > div {
 
 section > .container > .row .call-to-action {
     text-align: center;
+}
+
+section > .container > .row form .call-to-action {
+    text-align: left;
 }
 
 section > .container.alt-left > .row:nth-child(odd),
@@ -331,9 +388,10 @@ section > .container.alt-left > .row:nth-child(even) {
     background-color: #e5322c !important;
 }
 
-.row.red-zone .call-to-action a {
+.row.red-zone .call-to-action a,
+.row.red-zone .call-to-action input[type=submit] {
     color:#333333 !important;
-    background-color:#e5322c !important;
+    background-color:#f4f7f5 !important;
     border-right: 1px solid #d6d2d2 !important;
     border-bottom: 3px solid #d6d2d2 !important;
 }
@@ -368,7 +426,15 @@ section > .container > .row.showbox > div {
     line-height:18pt;
 }
 
-.call-to-action a {
+input[type=email],
+input[type=text],
+textarea {
+    display:block;
+    width:50%;
+}
+
+.call-to-action a,
+.call-to-action input[type=submit] {
     font-size:14pt;
 }
 
@@ -384,7 +450,7 @@ section > .container > .row.showbox > div {
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
     background:none;
-    color:#FFF;
+    color:#777;
 }
 
 }
