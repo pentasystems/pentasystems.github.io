@@ -10,6 +10,18 @@ html {
     height: 100%;
 }
 
+.cookie-law {
+    color:#f4f7f5 !important;
+    background-color: #9d191a !important;
+    z-index:1000;
+    position:absolute;
+    width:100%;
+    left:0;
+    font-size:14pt;
+    text-align:center;
+    padding:30px;
+}
+
 .rslides-default {
   position: relative;
   list-style: none;
@@ -293,6 +305,10 @@ textarea {
     min-height:120px;
 }
 
+.cookie-law {
+    font-size:10pt;
+    padding:10px;
+}
 
 /* MOBILE NAVBAR STYLE*/
 .navbar-nav {

@@ -1,5 +1,17 @@
-//jQuery to collapse the navbar on scroll
+//jQuery check cookie law
+$(function() {
+    if(getCookie("cookie-law") == "") {
+        $(".cookie-law").collapse("toggle");
+    }
+});
+
+//jQuery to collapse on scroll
 $(window).scroll(function() {
+
+    if($(".cookie-law").hasClass("in")) {
+        setCookie("cookie-law","1",10000);
+        $(".cookie-law").collapse("toggle");
+    }
 
     if($(".navbar-collapse").hasClass("in")) {
        $(".navbar-collapse").collapse("toggle"); 
@@ -32,3 +44,27 @@ $(function() {
         namespace: "rslides-default"
     });
 });
+
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
