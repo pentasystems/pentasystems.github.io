@@ -120,6 +120,7 @@ input[type=text] {
     color:#FFFFFF;
     outline:none;
     border-radius:0;
+    font-size:16px;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -140,21 +141,6 @@ input[type=text] {
     border:1px solid #9d191a;
 }
 
-
-
-@media(min-width:767px) {
-.navbar {
-    padding: 20px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
-
-.top-nav-collapse {
-    padding: 0;
-}
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Viga', sans-serif;
 }
@@ -173,6 +159,10 @@ strong {
     padding: 0 2px;
     display:inline-block;
     color:#000;
+}
+
+.showbox strong {
+    color:#FFF;
 }
 
 footer {
@@ -228,9 +218,7 @@ nav + section {
     margin-top:0;
 }
 
-
-
-
+/* Smartphone */
 @media screen and (max-width: 767px) {
 section > .container > .row.alt-left > div:nth-child(odd),
 section > .container > .row.alt-right > div:nth-child(even) {
@@ -350,10 +338,19 @@ textarea {
 }
 }
 
+/* Tablet and Desktop */
+@media screen and (min-width:767px) {
+.navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
 
+.top-nav-collapse {
+    padding: 0;
+}
 
-
-@media screen and (min-width: 768px) {
 section > .container > .row > div {
     margin:0;
     padding:10px;
@@ -420,10 +417,11 @@ section > .container > .row.showbox > div {
 
 .showbox h2 {
     font-size:36px;
+    margin-bottom:20px;
 }
 
 .showbox p {
-    font-size:18pt;
+    font-size:16pt;
     line-height:18pt;
 }
 
@@ -443,9 +441,21 @@ textarea {
     margin-top:30px;
 }
 
+.nav>li>a {
+    padding-right:5px;
+}
+
 .nav.navbar-nav.others {
     float:right;
+    margin-right:-20px;
 }
+
+.nav.others>li>a {
+    padding-right:7px;
+} 
+.nav.others>li:last-child>a {
+    padding-right:0;
+} 
 
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
