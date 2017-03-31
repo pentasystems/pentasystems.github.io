@@ -230,6 +230,43 @@ nav + section {
     margin-top:0;
 }
 
+/* SAMPLES */
+#samples .container {
+    padding:0;
+}
+
+.finish-sample {
+    margin-top: 30px;
+    padding:0 30px 0 30px;
+    margin-bottom:50px;
+}
+
+.finish-sample > div {
+    display: table;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:300px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.finish-sample > div > * {
+    display:table-cell;
+    vertical-align:bottom;
+}
+
+.finish-sample h3 {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight:bold;
+    color:#f4f7f5;
+    text-shadow: 0px 2px #000000;
+}
+
+.finish-sample p {
+    color: #f4f5f7;
+}
+
+
 /* Smartphone */
 @media screen and (max-width: 767px) {
 section > .container > .row.alt-left > div:nth-child(odd),
@@ -308,6 +345,10 @@ textarea {
 .cookie-law {
     font-size:10pt;
     padding:10px;
+}
+
+.finish-sample {
+    padding:0;
 }
 
 /* MOBILE NAVBAR STYLE*/
@@ -480,4 +521,13 @@ textarea {
     color:#777;
 }
 
+.finish-sample > div {
+    min-height:200px;
+}
+
+}
+
+.no-background,
+.no-background > * {
+    background:none !important;
 }
