@@ -20,6 +20,7 @@ html {
     font-size:14pt;
     text-align:center;
     padding:30px;
+    top:60px;
 }
 
 .rslides-default {
@@ -55,9 +56,12 @@ html {
 }
 
 .navbar {
-    background:#333333;
+    background:#111;
     color:#f4f7f5;
     border:none;
+    border-bottom:1px solid #000;
+    border-top:1px solid #000;
+    padding:5px;
 }
 
 .navbar .logo {
@@ -74,9 +78,13 @@ html {
 
 .navbar-default .navbar-toggle {
     border:none;
-    padding:0;
-    margin:5px 0px;
-    background:none;
+    margin: 12px 10px;
+    background: none;
+    padding: 6px 0;
+}    
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f4f7f5;
 }
 
 .navbar-default .navbar-toggle img {
@@ -93,6 +101,10 @@ html {
 .navbar-default .navbar-collapse, 
 .navbar-default .navbar-form {
     border:none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#AAA;
 }
 
 .navbar-default .navbar-nav > li > a:focus, 
@@ -167,10 +179,10 @@ p {
 }
 
 strong {
-    font-style: italic;
     padding: 0 2px;
     display:inline-block;
     color:#000;
+    font-weight:bold;
 }
 
 .showbox strong {
@@ -211,7 +223,7 @@ section {
 }
 
 nav + section {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .call-to-action a,
@@ -269,6 +281,11 @@ nav + section {
 
 /* Smartphone */
 @media screen and (max-width: 767px) {
+
+.cookie-law {
+    top:50px;
+}
+
 section > .container > .row.alt-left > div:nth-child(odd),
 section > .container > .row.alt-right > div:nth-child(even) {
     margin-left: -20px;
@@ -352,6 +369,10 @@ textarea {
 }
 
 /* MOBILE NAVBAR STYLE*/
+.navbar {
+    padding:0px !important;
+}
+
 .navbar-nav {
     margin:0;
 }
@@ -376,7 +397,7 @@ textarea {
 .navbar-nav.others li {
     border-bottom:none;
     text-align:right;
-}
+} 
 
 .navbar-nav.others>li>a {
     padding-right:0;
@@ -457,7 +478,7 @@ section > .container > .row.no-pad > div {
 }
 
 .navbar {
-    padding:0 !important;
+    padding:5px !important;
 }
 
 section > .container > .row.showbox > div {
