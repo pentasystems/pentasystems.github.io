@@ -226,16 +226,50 @@ nav + section {
     margin-top: 80px;
 }
 
+.call-to-action a span.glyphicon,
+.call-to-action input[type=submit].glyphicon {
+    margin-right:5px;
+}
+
 .call-to-action a,
 .call-to-action input[type=submit] {
-    border-radius:0 !important;
-    color:#f4f7f5;
-    background-color: #e5322c;
+    border-radius:3px !important;
     border:none;
-    border-right: 1px solid #9d191a;
+    /*border-right: 1px solid #9d191a;
     border-bottom: 3px solid #9d191a;
+    color:#f4f7f5;
+    background-color: #e5322c;*/
+
+    /*border-right: 1px solid #aaa;
+    border-bottom: 3px solid #aaa;
+    color:#000;
+    background-color: #eee;*/
+
+    border-right: 1px solid #666;
+    border-bottom: 3px solid #666;
+    color:#eee;
+    background-color: #3f3f3f;
+
     text-transform: uppercase;
     font-weight: bolder;
+    font-weight: bold;
+}
+
+.call-to-action a.white,
+.call-to-action input[type=submit].white {
+    background-color:rgba(0,0,0,0);
+    color: #454545;
+    /*border-right: 1px solid #aaa;
+    border-bottom: 3px solid #aaa;*/
+
+    border-right: 0;
+    border-bottom: 0;
+    font-weight: normal;
+}
+
+.call-to-action a.white:hover,
+.call-to-action input[type=submit].white:hover {
+    text-decoration: underline;
 }
 
 .row > div > *:first-child {
@@ -677,6 +711,11 @@ textarea {
 
 /* Desktop Only */
 @media screen and (min-width:992px) {
+
+.call-to-action a {
+    margin:5px;
+}
+
 /* PAGE INTRO*/
 .page-intro p {
     min-height:90px;
