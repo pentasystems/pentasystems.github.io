@@ -252,8 +252,50 @@ nav + section {
 }
 
 #discover p {
-    font-size:16pt;
+    font-size:15pt;
 }
+
+/* PRODUCT LINE */
+.product-line > div {
+    display: table;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:300px;
+    height:300px;
+}
+
+.product-line > div > * {
+    display:table-cell;
+    vertical-align:bottom;
+}
+
+.product-line > div > h2 {
+    font-weight:bold;
+    color:#f4f7f5;
+    text-shadow: 0px 2px 3px #000000;
+    text-transform:uppercase;
+}
+
+.product-line h3 {
+    font-size:16pt;
+    margin: 5px 0 1px 0;
+}
+
+.product-line p {
+    min-height:110px;
+}
+
+#railing-lines .product-line p {
+    min-height:40px;
+}
+
+.product-line p.call-to-action {
+    min-height: 0;
+}
+
+
+
 
 /* SAMPLES */
 #samples .container-fluid
@@ -273,6 +315,7 @@ nav + section {
     background-repeat: no-repeat;
     background-size: cover;
     min-height:300px;
+    height:300px;
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -287,6 +330,7 @@ nav + section {
     color:#f4f7f5;
     text-shadow: 0px 2px #000000;
     text-transform:uppercase;
+    text-align: left;
 }
 
 .finish-sample p {
@@ -296,6 +340,10 @@ nav + section {
 
 /* Smartphone */
 @media screen and (max-width: 767px) {
+
+nav + section {
+    margin-top:53px;
+}
 
 .cookie-law {
     top:50px;
@@ -321,6 +369,13 @@ section > .container-fluid > .row.alt-right > div:nth-child(even) .call-to-actio
     margin:10px -10px 20px 0;
 }
 
+section > .container > .row.alt-left > div:nth-child(odd) .call-to-action a,
+section > .container > .row.alt-right > div:nth-child(even) .call-to-action a,
+section > .container-fluid > .row.alt-left > div:nth-child(odd) .call-to-action a,
+section > .container-fluid > .row.alt-right > div:nth-child(even) .call-to-action a {
+    margin-left:15px;
+}
+
 section > .container > .row.alt-left > div:nth-child(even),
 section > .container > .row.alt-right > div:nth-child(odd),
 section > .container-fluid > .row.alt-left > div:nth-child(even),
@@ -339,6 +394,13 @@ section > .container-fluid > .row.alt-left > div:nth-child(even) .call-to-action
 section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action {
     text-align:left;
     margin:10px 0 20px -15px;
+}
+
+section > .container > .row.alt-left > div:nth-child(even) .call-to-action a,
+section > .container > .row.alt-right > div:nth-child(odd) .call-to-action a,
+section > .container-fluid > .row.alt-left > div:nth-child(even) .call-to-action a,
+section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action a {
+    margin-right:15px;
 }
 
 .row.no-pad > div {
@@ -437,6 +499,11 @@ textarea {
 .navbar-default .navbar-nav>.active>a:hover {
     background:none;
     color:#f4f7f5;
+}
+
+.product-line > div {
+    position: relative;
+    top: -8px;
 }
 }
 
@@ -584,6 +651,16 @@ textarea {
 
 .finish-sample > div {
     min-height:200px;
+    height:200px;
+}
+
+/* PAGE INTRO*/
+.page-intro p {
+    min-height:60px;
+}
+
+.page-intro p.call-to-action {
+    min-height:0;
 }
 
 /* DISCOVER */
@@ -596,6 +673,18 @@ textarea {
   padding-bottom: 40px;
 }
 
+}
+
+/* Desktop Only */
+@media screen and (min-width:992px) {
+/* PAGE INTRO*/
+.page-intro p {
+    min-height:90px;
+}
+
+.page-intro p.call-to-action {
+    min-height:0;
+}
 }
 
 .no-background,
