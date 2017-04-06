@@ -81,7 +81,7 @@ html {
     margin: 12px 10px;
     background: none;
     padding: 6px 0;
-}    
+}
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #f4f7f5;
@@ -93,12 +93,12 @@ html {
     margin-right:3px;
 }
 
-.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
     background:none !important;
 }
 
-.navbar-default .navbar-collapse, 
+.navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border:none;
 }
@@ -107,7 +107,7 @@ html {
     color:#AAA;
 }
 
-.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
     color:#FFF;
 }
@@ -125,7 +125,7 @@ html {
     pointer-events:none;
 }
 
-.noscroll { 
+.noscroll {
   overflow: hidden;
 }
 
@@ -138,13 +138,13 @@ input[type=email],
 input[type=text] {
     border:none;
     border-bottom:1px solid #9d191a;
-    padding:3px;
-    margin:3px;
+    padding:5px;
+    margin:10px 0;
     background:none;
     color:#FFFFFF;
     outline:none;
     border-radius:0;
-    font-size:16px;
+    font-size:16pt;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -240,6 +240,19 @@ nav + section {
 
 .row > div > *:first-child {
     margin-top:0;
+}
+
+/* DISCOVER */
+#discover {
+  margin:20px 0;
+}
+
+#discover h2 {
+    font-size:36px;
+}
+
+#discover p {
+    font-size:16pt;
 }
 
 /* SAMPLES */
@@ -408,7 +421,7 @@ textarea {
 .navbar-nav.others li {
     border-bottom:none;
     text-align:right;
-} 
+}
 
 .navbar-nav.others>li>a {
     padding-right:0;
@@ -419,8 +432,8 @@ textarea {
     margin-left:3px;
 }
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background:none;
     color:#f4f7f5;
@@ -438,6 +451,12 @@ textarea {
 
 .top-nav-collapse {
     padding: 0;
+}
+
+textarea,
+input[type=email],
+input[type=text] {
+    margin:20px 0;
 }
 
 section > .container > .row > div,
@@ -551,13 +570,13 @@ textarea {
 
 .nav.others>li>a {
     padding-right:7px;
-} 
+}
 .nav.others>li:last-child>a {
     padding-right:0;
-} 
+}
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background:none;
     color:#777;
@@ -565,6 +584,16 @@ textarea {
 
 .finish-sample > div {
     min-height:200px;
+}
+
+/* DISCOVER */
+#discover {
+  margin:30px 0;
+}
+
+#discover .red-zone {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 }
