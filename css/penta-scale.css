@@ -20,6 +20,7 @@ html {
     font-size:14pt;
     text-align:center;
     padding:30px;
+    top:60px;
 }
 
 .rslides-default {
@@ -55,9 +56,12 @@ html {
 }
 
 .navbar {
-    background:#333333;
+    background:#111;
     color:#f4f7f5;
     border:none;
+    border-bottom:1px solid #000;
+    border-top:1px solid #000;
+    padding:5px;
 }
 
 .navbar .logo {
@@ -74,9 +78,13 @@ html {
 
 .navbar-default .navbar-toggle {
     border:none;
-    padding:0;
-    margin:5px 0px;
-    background:none;
+    margin: 12px 10px;
+    background: none;
+    padding: 6px 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f4f7f5;
 }
 
 .navbar-default .navbar-toggle img {
@@ -85,17 +93,21 @@ html {
     margin-right:3px;
 }
 
-.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
     background:none !important;
 }
 
-.navbar-default .navbar-collapse, 
+.navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border:none;
 }
 
-.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav>li>a {
+    color:#AAA;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
     color:#FFF;
 }
@@ -113,7 +125,7 @@ html {
     pointer-events:none;
 }
 
-.noscroll { 
+.noscroll {
   overflow: hidden;
 }
 
@@ -126,13 +138,13 @@ input[type=email],
 input[type=text] {
     border:none;
     border-bottom:1px solid #9d191a;
-    padding:3px;
-    margin:3px;
+    padding:5px;
+    margin:10px 0;
     background:none;
     color:#FFFFFF;
     outline:none;
     border-radius:0;
-    font-size:16px;
+    font-size:16pt;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -167,10 +179,10 @@ p {
 }
 
 strong {
-    font-style: italic;
     padding: 0 2px;
     display:inline-block;
     color:#000;
+    font-weight:bold;
 }
 
 .showbox strong {
@@ -211,7 +223,7 @@ section {
 }
 
 nav + section {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .call-to-action a,
@@ -230,7 +242,63 @@ nav + section {
     margin-top:0;
 }
 
+/* DISCOVER */
+#discover {
+  margin:20px 0;
+}
+
+#discover h2 {
+    font-size:36px;
+}
+
+#discover p {
+    font-size:15pt;
+}
+
+/* PRODUCT LINE */
+.product-line > div {
+    display: table;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:300px;
+    height:300px;
+}
+
+.product-line > div > * {
+    display:table-cell;
+    vertical-align:bottom;
+}
+
+.product-line > div > h2 {
+    font-weight:bold;
+    color:#f4f7f5;
+    text-shadow: 0px 2px 3px #000000;
+    text-transform:uppercase;
+}
+
+.product-line h3 {
+    font-size:16pt;
+    margin: 5px 0 1px 0;
+}
+
+.product-line p {
+    min-height:110px;
+}
+
+#railing-lines .product-line p {
+    min-height:40px;
+}
+
+.product-line p.call-to-action {
+    min-height: 0;
+}
+
+
+
+
 /* SAMPLES */
+#samples .container-fluid
 #samples .container {
     padding:0;
 }
@@ -247,6 +315,7 @@ nav + section {
     background-repeat: no-repeat;
     background-size: cover;
     min-height:300px;
+    height:300px;
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -260,6 +329,8 @@ nav + section {
     font-weight:bold;
     color:#f4f7f5;
     text-shadow: 0px 2px #000000;
+    text-transform:uppercase;
+    text-align: left;
 }
 
 .finish-sample p {
@@ -269,8 +340,19 @@ nav + section {
 
 /* Smartphone */
 @media screen and (max-width: 767px) {
+
+nav + section {
+    margin-top:53px;
+}
+
+.cookie-law {
+    top:50px;
+}
+
 section > .container > .row.alt-left > div:nth-child(odd),
-section > .container > .row.alt-right > div:nth-child(even) {
+section > .container > .row.alt-right > div:nth-child(even),
+section > .container-fluid > .row.alt-left > div:nth-child(odd),
+section > .container-fluid > .row.alt-right > div:nth-child(even){
     margin-left: -20px;
     padding-left: 30px;
     padding-right:5px;
@@ -280,13 +362,24 @@ section > .container > .row.alt-right > div:nth-child(even) {
 }
 
 section > .container > .row.alt-left > div:nth-child(odd) .call-to-action,
-section > .container > .row.alt-right > div:nth-child(even) .call-to-action {
+section > .container > .row.alt-right > div:nth-child(even) .call-to-action,
+section > .container-fluid > .row.alt-left > div:nth-child(odd) .call-to-action,
+section > .container-fluid > .row.alt-right > div:nth-child(even) .call-to-action {
     text-align:right;
     margin:10px -10px 20px 0;
 }
 
+section > .container > .row.alt-left > div:nth-child(odd) .call-to-action a,
+section > .container > .row.alt-right > div:nth-child(even) .call-to-action a,
+section > .container-fluid > .row.alt-left > div:nth-child(odd) .call-to-action a,
+section > .container-fluid > .row.alt-right > div:nth-child(even) .call-to-action a {
+    margin-left:15px;
+}
+
 section > .container > .row.alt-left > div:nth-child(even),
-section > .container > .row.alt-right > div:nth-child(odd) {
+section > .container > .row.alt-right > div:nth-child(odd),
+section > .container-fluid > .row.alt-left > div:nth-child(even),
+section > .container-fluid > .row.alt-right > div:nth-child(odd) {
     margin-right: -20px;
     padding-left: 10px;
     padding-right:25px;
@@ -296,9 +389,18 @@ section > .container > .row.alt-right > div:nth-child(odd) {
 }
 
 section > .container > .row.alt-left > div:nth-child(even) .call-to-action,
-section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
+section > .container > .row.alt-right > div:nth-child(odd) .call-to-action,
+section > .container-fluid > .row.alt-left > div:nth-child(even) .call-to-action,
+section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action {
     text-align:left;
     margin:10px 0 20px -15px;
+}
+
+section > .container > .row.alt-left > div:nth-child(even) .call-to-action a,
+section > .container > .row.alt-right > div:nth-child(odd) .call-to-action a,
+section > .container-fluid > .row.alt-left > div:nth-child(even) .call-to-action a,
+section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action a {
+    margin-right:15px;
 }
 
 .row.no-pad > div {
@@ -320,7 +422,8 @@ section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
     border-bottom: 3px solid #d6d2d2 !important;
 }
 
-section > .container > .row.showbox {
+section > .container > .row.showbox,
+section > .container-fluid > .row.showbox{
     background-image: none !important;
 }
 
@@ -352,6 +455,10 @@ textarea {
 }
 
 /* MOBILE NAVBAR STYLE*/
+.navbar {
+    padding:0px !important;
+}
+
 .navbar-nav {
     margin:0;
 }
@@ -387,11 +494,16 @@ textarea {
     margin-left:3px;
 }
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background:none;
     color:#f4f7f5;
+}
+
+.product-line > div {
+    position: relative;
+    top: -8px;
 }
 }
 
@@ -408,22 +520,33 @@ textarea {
     padding: 0;
 }
 
-section > .container > .row > div {
+textarea,
+input[type=email],
+input[type=text] {
+    margin:20px 0;
+}
+
+section > .container > .row > div,
+section > .container-fluid > .row > div{
     margin:0;
     padding:10px;
     text-align: justify;
 }
 
-section > .container > .row .call-to-action {
+section > .container > .row .call-to-action,
+section > .container-fluid > .row .call-to-action{
     text-align: center;
 }
 
-section > .container > .row form .call-to-action {
+section > .container > .row form .call-to-action,
+section > .container-fluid > .row form .call-to-action{
     text-align: left;
 }
 
 section > .container.alt-left > .row:nth-child(odd),
-section > .container.alt-right > .row:nth-child(even) {
+section > .container.alt-right > .row:nth-child(even),
+section > .container-fluid.alt-left > .row:nth-child(odd),
+section > .container-fluid.alt-right > .row:nth-child(even) {
     margin-right:10px;
     padding-left:25px;
     padding-top:8px;
@@ -431,7 +554,9 @@ section > .container.alt-right > .row:nth-child(even) {
 }
 
 section > .container.alt-right > .row:nth-child(odd),
-section > .container.alt-left > .row:nth-child(even) {
+section > .container.alt-left > .row:nth-child(even),
+section > .container-fluid.alt-right > .row:nth-child(odd),
+section > .container-fluid.alt-left > .row:nth-child(even) {
     margin-left:10px;
     padding-right:25px;
     padding-top:8px;
@@ -452,15 +577,18 @@ section > .container.alt-left > .row:nth-child(even) {
 }
 
 section > .container > .row.no-pad,
-section > .container > .row.no-pad > div {
+section > .container > .row.no-pad > div,
+section > .container-fluid > .row.no-pad,
+section > .container-fluid > .row.no-pad > div {
     padding:0 !important;
 }
 
 .navbar {
-    padding:0 !important;
+    padding:5px !important;
 }
 
-section > .container > .row.showbox > div {
+section > .container > .row.showbox > div,
+section > .container-fluid > .row.showbox > div {
     background-image: none !important;
 }
 
@@ -509,13 +637,13 @@ textarea {
 
 .nav.others>li>a {
     padding-right:7px;
-} 
+}
 .nav.others>li:last-child>a {
     padding-right:0;
-} 
+}
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background:none;
     color:#777;
@@ -523,8 +651,40 @@ textarea {
 
 .finish-sample > div {
     min-height:200px;
+    height:200px;
 }
 
+/* PAGE INTRO*/
+.page-intro p {
+    min-height:60px;
+}
+
+.page-intro p.call-to-action {
+    min-height:0;
+}
+
+/* DISCOVER */
+#discover {
+  margin:30px 0;
+}
+
+#discover .red-zone {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+}
+
+/* Desktop Only */
+@media screen and (min-width:992px) {
+/* PAGE INTRO*/
+.page-intro p {
+    min-height:90px;
+}
+
+.page-intro p.call-to-action {
+    min-height:0;
+}
 }
 
 .no-background,
