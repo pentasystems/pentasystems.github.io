@@ -243,6 +243,7 @@ nav + section {
 }
 
 /* SAMPLES */
+#samples .container-fluid
 #samples .container {
     padding:0;
 }
@@ -272,6 +273,7 @@ nav + section {
     font-weight:bold;
     color:#f4f7f5;
     text-shadow: 0px 2px #000000;
+    text-transform:uppercase;
 }
 
 .finish-sample p {
@@ -287,7 +289,9 @@ nav + section {
 }
 
 section > .container > .row.alt-left > div:nth-child(odd),
-section > .container > .row.alt-right > div:nth-child(even) {
+section > .container > .row.alt-right > div:nth-child(even),
+section > .container-fluid > .row.alt-left > div:nth-child(odd),
+section > .container-fluid > .row.alt-right > div:nth-child(even){
     margin-left: -20px;
     padding-left: 30px;
     padding-right:5px;
@@ -297,13 +301,17 @@ section > .container > .row.alt-right > div:nth-child(even) {
 }
 
 section > .container > .row.alt-left > div:nth-child(odd) .call-to-action,
-section > .container > .row.alt-right > div:nth-child(even) .call-to-action {
+section > .container > .row.alt-right > div:nth-child(even) .call-to-action,
+section > .container-fluid > .row.alt-left > div:nth-child(odd) .call-to-action,
+section > .container-fluid > .row.alt-right > div:nth-child(even) .call-to-action {
     text-align:right;
     margin:10px -10px 20px 0;
 }
 
 section > .container > .row.alt-left > div:nth-child(even),
-section > .container > .row.alt-right > div:nth-child(odd) {
+section > .container > .row.alt-right > div:nth-child(odd),
+section > .container-fluid > .row.alt-left > div:nth-child(even),
+section > .container-fluid > .row.alt-right > div:nth-child(odd) {
     margin-right: -20px;
     padding-left: 10px;
     padding-right:25px;
@@ -313,7 +321,9 @@ section > .container > .row.alt-right > div:nth-child(odd) {
 }
 
 section > .container > .row.alt-left > div:nth-child(even) .call-to-action,
-section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
+section > .container > .row.alt-right > div:nth-child(odd) .call-to-action,
+section > .container-fluid > .row.alt-left > div:nth-child(even) .call-to-action,
+section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action {
     text-align:left;
     margin:10px 0 20px -15px;
 }
@@ -337,7 +347,8 @@ section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
     border-bottom: 3px solid #d6d2d2 !important;
 }
 
-section > .container > .row.showbox {
+section > .container > .row.showbox,
+section > .container-fluid > .row.showbox{
     background-image: none !important;
 }
 
@@ -429,22 +440,27 @@ textarea {
     padding: 0;
 }
 
-section > .container > .row > div {
+section > .container > .row > div,
+section > .container-fluid > .row > div{
     margin:0;
     padding:10px;
     text-align: justify;
 }
 
-section > .container > .row .call-to-action {
+section > .container > .row .call-to-action,
+section > .container-fluid > .row .call-to-action{
     text-align: center;
 }
 
-section > .container > .row form .call-to-action {
+section > .container > .row form .call-to-action,
+section > .container-fluid > .row form .call-to-action{
     text-align: left;
 }
 
 section > .container.alt-left > .row:nth-child(odd),
-section > .container.alt-right > .row:nth-child(even) {
+section > .container.alt-right > .row:nth-child(even),
+section > .container-fluid.alt-left > .row:nth-child(odd),
+section > .container-fluid.alt-right > .row:nth-child(even) {
     margin-right:10px;
     padding-left:25px;
     padding-top:8px;
@@ -452,7 +468,9 @@ section > .container.alt-right > .row:nth-child(even) {
 }
 
 section > .container.alt-right > .row:nth-child(odd),
-section > .container.alt-left > .row:nth-child(even) {
+section > .container.alt-left > .row:nth-child(even),
+section > .container-fluid.alt-right > .row:nth-child(odd),
+section > .container-fluid.alt-left > .row:nth-child(even) {
     margin-left:10px;
     padding-right:25px;
     padding-top:8px;
@@ -473,7 +491,9 @@ section > .container.alt-left > .row:nth-child(even) {
 }
 
 section > .container > .row.no-pad,
-section > .container > .row.no-pad > div {
+section > .container > .row.no-pad > div,
+section > .container-fluid > .row.no-pad,
+section > .container-fluid > .row.no-pad > div {
     padding:0 !important;
 }
 
@@ -481,7 +501,8 @@ section > .container > .row.no-pad > div {
     padding:5px !important;
 }
 
-section > .container > .row.showbox > div {
+section > .container > .row.showbox > div,
+section > .container-fluid > .row.showbox > div {
     background-image: none !important;
 }
 
