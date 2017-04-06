@@ -20,6 +20,7 @@ html {
     font-size:14pt;
     text-align:center;
     padding:30px;
+    top:60px;
 }
 
 .rslides-default {
@@ -55,9 +56,12 @@ html {
 }
 
 .navbar {
-    background:#333333;
+    background:#111;
     color:#f4f7f5;
     border:none;
+    border-bottom:1px solid #000;
+    border-top:1px solid #000;
+    padding:5px;
 }
 
 .navbar .logo {
@@ -74,9 +78,13 @@ html {
 
 .navbar-default .navbar-toggle {
     border:none;
-    padding:0;
-    margin:5px 0px;
-    background:none;
+    margin: 12px 10px;
+    background: none;
+    padding: 6px 0;
+}    
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f4f7f5;
 }
 
 .navbar-default .navbar-toggle img {
@@ -93,6 +101,10 @@ html {
 .navbar-default .navbar-collapse, 
 .navbar-default .navbar-form {
     border:none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#AAA;
 }
 
 .navbar-default .navbar-nav > li > a:focus, 
@@ -167,10 +179,10 @@ p {
 }
 
 strong {
-    font-style: italic;
     padding: 0 2px;
     display:inline-block;
     color:#000;
+    font-weight:bold;
 }
 
 .showbox strong {
@@ -211,7 +223,7 @@ section {
 }
 
 nav + section {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .call-to-action a,
@@ -231,6 +243,7 @@ nav + section {
 }
 
 /* SAMPLES */
+#samples .container-fluid
 #samples .container {
     padding:0;
 }
@@ -260,6 +273,7 @@ nav + section {
     font-weight:bold;
     color:#f4f7f5;
     text-shadow: 0px 2px #000000;
+    text-transform:uppercase;
 }
 
 .finish-sample p {
@@ -269,8 +283,15 @@ nav + section {
 
 /* Smartphone */
 @media screen and (max-width: 767px) {
+
+.cookie-law {
+    top:50px;
+}
+
 section > .container > .row.alt-left > div:nth-child(odd),
-section > .container > .row.alt-right > div:nth-child(even) {
+section > .container > .row.alt-right > div:nth-child(even),
+section > .container-fluid > .row.alt-left > div:nth-child(odd),
+section > .container-fluid > .row.alt-right > div:nth-child(even){
     margin-left: -20px;
     padding-left: 30px;
     padding-right:5px;
@@ -280,13 +301,17 @@ section > .container > .row.alt-right > div:nth-child(even) {
 }
 
 section > .container > .row.alt-left > div:nth-child(odd) .call-to-action,
-section > .container > .row.alt-right > div:nth-child(even) .call-to-action {
+section > .container > .row.alt-right > div:nth-child(even) .call-to-action,
+section > .container-fluid > .row.alt-left > div:nth-child(odd) .call-to-action,
+section > .container-fluid > .row.alt-right > div:nth-child(even) .call-to-action {
     text-align:right;
     margin:10px -10px 20px 0;
 }
 
 section > .container > .row.alt-left > div:nth-child(even),
-section > .container > .row.alt-right > div:nth-child(odd) {
+section > .container > .row.alt-right > div:nth-child(odd),
+section > .container-fluid > .row.alt-left > div:nth-child(even),
+section > .container-fluid > .row.alt-right > div:nth-child(odd) {
     margin-right: -20px;
     padding-left: 10px;
     padding-right:25px;
@@ -296,7 +321,9 @@ section > .container > .row.alt-right > div:nth-child(odd) {
 }
 
 section > .container > .row.alt-left > div:nth-child(even) .call-to-action,
-section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
+section > .container > .row.alt-right > div:nth-child(odd) .call-to-action,
+section > .container-fluid > .row.alt-left > div:nth-child(even) .call-to-action,
+section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action {
     text-align:left;
     margin:10px 0 20px -15px;
 }
@@ -320,7 +347,8 @@ section > .container > .row.alt-right > div:nth-child(odd) .call-to-action {
     border-bottom: 3px solid #d6d2d2 !important;
 }
 
-section > .container > .row.showbox {
+section > .container > .row.showbox,
+section > .container-fluid > .row.showbox{
     background-image: none !important;
 }
 
@@ -352,6 +380,10 @@ textarea {
 }
 
 /* MOBILE NAVBAR STYLE*/
+.navbar {
+    padding:0px !important;
+}
+
 .navbar-nav {
     margin:0;
 }
@@ -376,7 +408,7 @@ textarea {
 .navbar-nav.others li {
     border-bottom:none;
     text-align:right;
-}
+} 
 
 .navbar-nav.others>li>a {
     padding-right:0;
@@ -408,22 +440,27 @@ textarea {
     padding: 0;
 }
 
-section > .container > .row > div {
+section > .container > .row > div,
+section > .container-fluid > .row > div{
     margin:0;
     padding:10px;
     text-align: justify;
 }
 
-section > .container > .row .call-to-action {
+section > .container > .row .call-to-action,
+section > .container-fluid > .row .call-to-action{
     text-align: center;
 }
 
-section > .container > .row form .call-to-action {
+section > .container > .row form .call-to-action,
+section > .container-fluid > .row form .call-to-action{
     text-align: left;
 }
 
 section > .container.alt-left > .row:nth-child(odd),
-section > .container.alt-right > .row:nth-child(even) {
+section > .container.alt-right > .row:nth-child(even),
+section > .container-fluid.alt-left > .row:nth-child(odd),
+section > .container-fluid.alt-right > .row:nth-child(even) {
     margin-right:10px;
     padding-left:25px;
     padding-top:8px;
@@ -431,7 +468,9 @@ section > .container.alt-right > .row:nth-child(even) {
 }
 
 section > .container.alt-right > .row:nth-child(odd),
-section > .container.alt-left > .row:nth-child(even) {
+section > .container.alt-left > .row:nth-child(even),
+section > .container-fluid.alt-right > .row:nth-child(odd),
+section > .container-fluid.alt-left > .row:nth-child(even) {
     margin-left:10px;
     padding-right:25px;
     padding-top:8px;
@@ -452,15 +491,18 @@ section > .container.alt-left > .row:nth-child(even) {
 }
 
 section > .container > .row.no-pad,
-section > .container > .row.no-pad > div {
+section > .container > .row.no-pad > div,
+section > .container-fluid > .row.no-pad,
+section > .container-fluid > .row.no-pad > div {
     padding:0 !important;
 }
 
 .navbar {
-    padding:0 !important;
+    padding:5px !important;
 }
 
-section > .container > .row.showbox > div {
+section > .container > .row.showbox > div,
+section > .container-fluid > .row.showbox > div {
     background-image: none !important;
 }
 
