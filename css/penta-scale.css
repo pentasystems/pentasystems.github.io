@@ -732,3 +732,6 @@ textarea {
 .no-background > * {
     background:none !important;
 }
+
+
+a.btn.btn-default.white {display:none;}
