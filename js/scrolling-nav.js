@@ -14,7 +14,7 @@ $(window).scroll(function() {
     }
 
     if($(".navbar-collapse").hasClass("in")) {
-       $(".navbar-collapse").collapse("toggle"); 
+       $(".navbar-collapse").collapse("toggle");
     }
 
     /*if ($(".navbar").offset().top > 50) {
@@ -38,10 +38,52 @@ $(function() {
 //jQuery for sliders initializatiom
 $(function() {
     $(".rslides-default").responsiveSlides({
-        auto: true,                    
+        auto: true,
         speed: 500,
         timeout: 4000,
         namespace: "rslides-default"
+    });
+});
+
+//sendmail
+jQuery(function($)
+{
+    $("#contact_form").submit(function()
+    {
+        var email = $("#email").val(); // get email field value
+        var msg = $("#msg").val(); // get message field value
+        $.ajax(
+        {
+            type: "POST",
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            data: {
+                'key': 'EHYOuiwRJFtqrvFG-n8Rcw',
+                'message': {
+                    'from_email': 'scale@pentasystems.it',
+                    'from_name': email,
+                    'headers': {
+                        'Reply-To': email
+                    },
+                    'subject': 'Richiesta contatto | scale.pentasystems.it',
+                    'text': msg,
+                    'to': [
+                    {
+                        'email': 'manuele@pentasystems.it',
+                        'name': 'Manuele Perlati',
+                        'type': 'to'
+                    }]
+                }
+            }
+        })
+        .done(function(response) {
+            alert('Il tuo messaggio è stato inoltrato, grazie!'); // show success message
+            $("#email").val(''); // reset field after successful submission
+            $("#msg").val(''); // reset field after successful submission
+        })
+        .fail(function(response) {
+            alert('C\'é stato un problema durante l\'inoltro. Riprova più tardi o scrivi una mail a info@pentasystems.it');
+        });
+        return false; // prevent page refresh
     });
 });
 

@@ -129,6 +129,7 @@ html {
   overflow: hidden;
 }
 
+button[name=submit],
 input[type=submit] {
     outline:none;
 }
@@ -227,23 +228,16 @@ nav + section {
 }
 
 .call-to-action a span.glyphicon,
+.call-to-action button[name=submit].glyphicon,
 .call-to-action input[type=submit].glyphicon {
     margin-right:5px;
 }
 
 .call-to-action a,
+.call-to-action button[name=submit],
 .call-to-action input[type=submit] {
     border-radius:3px !important;
     border:none;
-    /*border-right: 1px solid #9d191a;
-    border-bottom: 3px solid #9d191a;
-    color:#f4f7f5;
-    background-color: #e5322c;*/
-
-    /*border-right: 1px solid #aaa;
-    border-bottom: 3px solid #aaa;
-    color:#000;
-    background-color: #eee;*/
 
     border-right: 1px solid #666;
     border-bottom: 3px solid #666;
@@ -256,11 +250,10 @@ nav + section {
 }
 
 .call-to-action a.white,
+.call-to-action button[name=submit],
 .call-to-action input[type=submit].white {
     background-color:rgba(0,0,0,0);
     color: #454545;
-    /*border-right: 1px solid #aaa;
-    border-bottom: 3px solid #aaa;*/
 
     border-right: 0;
     border-bottom: 0;
@@ -268,6 +261,7 @@ nav + section {
 }
 
 .call-to-action a.white:hover,
+.call-to-action button[name=submit].white:hover,
 .call-to-action input[type=submit].white:hover {
     text-decoration: underline;
 }
@@ -451,6 +445,7 @@ section > .container-fluid > .row.alt-right > div:nth-child(odd) .call-to-action
 }
 
 .row > div.red-zone .call-to-action a,
+.row.red-zone .call-to-action button[name=submit],
 .row.red-zone .call-to-action input[type=submit] {
     color:#333333 !important;
     background-color:#f4f7f5 !important;
@@ -605,6 +600,7 @@ section > .container-fluid.alt-left > .row:nth-child(even) {
 }
 
 .row.red-zone .call-to-action a,
+.row.red-zone .call-to-action button[name=submit],
 .row.red-zone .call-to-action input[type=submit] {
     color:#333333 !important;
     background-color:#f4f7f5 !important;
@@ -654,6 +650,7 @@ textarea {
 }
 
 .call-to-action a,
+.call-to-action button[name=submit],
 .call-to-action input[type=submit] {
     font-size:14pt;
 }
