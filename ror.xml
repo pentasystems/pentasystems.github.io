@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://scale.pentasystems.it/</title>
+  <link>http://scale.pentasystems.it/</link>
+
+<item>
+     <link>http://scale.pentasystems.it/</link>
+     <title>Scale a giorno, parapetti e ringhiere personalizzate dalla progettazione alle finiture - Penta Systems - Verona</title>
+     <description>Penta Systems realizza scale a giorno, parapetti in vetro e ringhiere in acciao curando dalla progettazione, alle finiture, alla realizzazione e posa in opera</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://scale.pentasystems.it/scale-a-giorno.html</link>
+     <title>Linea di scale a vista Pentasystems per la realizzazione del tuo pezzo unico - Penta Systems - Verona</title>
+     <description>Penta Systems realizza scale a vista su misura, per realizzare il tuo pezzo unico curando tutto, dalla progettazione alla posa in opera</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://scale.pentasystems.it/ringhiere-e-parapetti.html</link>
+     <title>Linea di parapetti e ringhiere per la realizzazione del tuo pezzo unico - Penta Systems - Verona</title>
+     <description>Penta Systems realizza parapetti in vetro stratificato e ringhiere classiche in ferro o acciaio, per realizzare il tuo pezzo unico curando tutto, dalla progettazione alla posa in opera</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://scale.pentasystems.it/finiture-per-scale.html</link>
+     <title>Finiture per scale a vista e parapetti. Realizziamo il tuo pezzo unico - Penta Systems - Verona</title>
+     <description>Penta Systems realizza scale a giorno con finiture ricercate, sia moderne che classiche, curando tutto, dalla progettazione alla posa in opera</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
