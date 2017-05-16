@@ -18,6 +18,10 @@ $(function() {
 });
 
 
+$(window).resize(function () {
+    floatingCallToActionUpdate();
+});
+
 //jQuery to collapse on scroll
 $(window).scroll(function() {
     if($(".cookie-law").hasClass("in")) {
