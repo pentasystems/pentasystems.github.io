@@ -1,13 +1,29 @@
+
+
 //jQuery check cookie law
 $(function() {
     if(getCookie("cookie-law") == "") {
         $(".cookie-law").collapse("toggle");
     }
+
+    $(".floating-call-to-action").addClass("in");
+    $(".floating-call-to-action").addClass("collapse");
+
+    setTimeout(function() {
+        $(".floating-call-to-action").toggleClass("blink");
+    }, 20000);
+    setTimeout(function() {
+        $(".floating-call-to-action").toggleClass("blink");
+    }, 21000);
+});
+
+
+$(window).resize(function () {
+    floatingCallToActionUpdate();
 });
 
 //jQuery to collapse on scroll
 $(window).scroll(function() {
-
     if($(".cookie-law").hasClass("in")) {
         setCookie("cookie-law","1",10000);
         $(".cookie-law").collapse("toggle");
@@ -17,12 +33,21 @@ $(window).scroll(function() {
        $(".navbar-collapse").collapse("toggle");
     }
 
-    /*if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }*/
+    floatingCallToActionUpdate();
 });
+
+var floatingCallToActionUpdate = function() {
+    var position = $(window).scrollTop();
+    var offset = $("#discover").offset();
+    var height = $(window).height();
+    if(offset.top - position < height) {
+        if($(".floating-call-to-action").hasClass("in")) {
+            $(".floating-call-to-action").collapse("toggle");
+        }
+    } else if( ! $(".floating-call-to-action").hasClass("in")) {
+        $(".floating-call-to-action").collapse("toggle");
+    }
+};
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
